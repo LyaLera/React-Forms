@@ -42,7 +42,7 @@ function App() {
     {
       id: 4,
       name: "password",
-      type: "text",
+      type: "password",
       placehplder: "Password",
       errorMessage:
         "Password should be at least 8-20 characters and it sholud include at least 1 letter, 1 number and 1 special character",
@@ -57,6 +57,7 @@ function App() {
       placehplder: "Confirm Password",
       errorMessage: "Passwords don't match!",
       label: "Confirm Password",
+      pattern: values.password,
       required: true,
     },
   ];
